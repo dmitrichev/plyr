@@ -8595,13 +8595,11 @@ typeof navigator === "object" && (function (global, factory) {
           speed = 0.1;
         }
         /*
-                if (speed > 2.0) {
-                    speed = 2.0;
-                }
+        if (speed > 2.0) {
+            speed = 2.0;
+        }
         */
 
-
-        console.log(this.config.speed, this.config.speed.options.includes(speed), speed);
 
         if (!this.config.speed.options.includes(speed)) {
           this.debug.warn("Unsupported speed (".concat(speed, ")"));

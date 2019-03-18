@@ -664,13 +664,12 @@ class Plyr {
         if (speed < 0.1) {
             speed = 0.1;
         }
-/*
+
+        /*
         if (speed > 2.0) {
             speed = 2.0;
         }
-*/
-
-console.log(this.config.speed, this.config.speed.options.includes(speed), speed);
+        */
 
         if (!this.config.speed.options.includes(speed)) {
             this.debug.warn(`Unsupported speed (${speed})`);
