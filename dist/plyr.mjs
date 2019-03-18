@@ -2501,7 +2501,7 @@ var controls = {
     if (is$1.array(options)) {
       this.options.speed = options;
     } else if (this.isHTML5 || this.isVimeo) {
-      this.options.speed = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
+      this.options.speed = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 4, 8, 16, 32];
     } // Set options if passed and filter based on config
 
 
@@ -3532,7 +3532,7 @@ var defaults$1 = {
   // Speed default and options to display
   speed: {
     selected: 1,
-    options: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2]
+    options: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 4, 8, 16, 32]
   },
   // Keyboard shortcut settings
   keyboard: {
@@ -8594,6 +8594,8 @@ function () {
               }
       */
 
+
+      console.log(this.config.speed, this.config.speed.options.includes(speed), speed);
 
       if (!this.config.speed.options.includes(speed)) {
         this.debug.warn("Unsupported speed (".concat(speed, ")"));

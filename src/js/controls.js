@@ -1060,7 +1060,7 @@ const controls = {
         if (is.array(options)) {
             this.options.speed = options;
         } else if (this.isHTML5 || this.isVimeo) {
-            this.options.speed = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
+            this.options.speed = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 4, 8, 16, 32];
         }
 
         // Set options if passed and filter based on config

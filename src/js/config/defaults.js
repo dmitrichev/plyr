@@ -81,7 +81,7 @@ const defaults = {
     // Speed default and options to display
     speed: {
         selected: 1,
-        options: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2],
+        options: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 4, 8, 16, 32],
     },
 
     // Keyboard shortcut settings

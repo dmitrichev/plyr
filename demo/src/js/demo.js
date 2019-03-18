@@ -79,6 +79,11 @@ import Plyr from '../../../src/js/plyr';
                     enabled: env.prod || env.dev,
                     publisherId: '918848828995742',
                 },
+                speed: {
+                    selected: 1,
+                    options: [0.5, 1, 2, 4, 8, 16, 32],
+                },
+                controls: ['play', 'progress', 'settings', 'fullscreen'],
                 previewThumbnails: {
                     enabled: true,
                     src: [
