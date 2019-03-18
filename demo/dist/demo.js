@@ -12438,10 +12438,12 @@ typeof navigator === "object" && (function () {
 	      if (speed < 0.1) {
 	        speed = 0.1;
 	      }
+	      /*
+	              if (speed > 2.0) {
+	                  speed = 2.0;
+	              }
+	      */
 
-	      if (speed > 2.0) {
-	        speed = 2.0;
-	      }
 
 	      if (!this.config.speed.options.includes(speed)) {
 	        this.debug.warn("Unsupported speed (".concat(speed, ")"));
